@@ -1,0 +1,157 @@
+330  knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo -N ansibletest1
+  331  knife node list
+  332  knife node show ansibletest1
+  336  knife cookbook create
+  352  knife cookbook upload 
+  353  knife cookbook upload example1
+
+330  knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo -N ansibletest1
+  331  knife node list
+  332  knife node show ansibletest1
+  336  knife cookbook create
+  352  knife cookbook upload 
+  353  knife cookbook upload example1
+
+  291  cat knife.rb 
+  294  knife 
+  295  knife node list
+  296  knife ssl fetch
+  297  knife node list
+  320  knife node list
+  327  knife bootstrap
+  328  knife bootstrap --help
+  329  knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo 
+  330  knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo -N ansibletest1
+  331  knife node list
+  332  knife node show ansibletest1
+  336  knife cookbook create
+  352  knife cookbook upload 
+  353  knife cookbook upload example1
+  358  knife cookbook
+  363  knife node --help
+  382  history  | grep knife
+  391  knife node list
+  392  knife node show 35.190.152.118
+  393  knife node show ansibletest1
+  394  knife node run_list add ansibletest1 recipe[example1::default]
+  395  knife node show ansibletest1
+  409  knife node run_list set ansibletest1 recipe[DB::install]
+  415  knife node run_list set ansibletest1 recipe[app::install]
+  417  knife cookbook upload app
+  420  history | grep knife
+  479  knife google
+  480  knife google server list
+  481  vim ../../.chef/knife.rb 
+  482  knife google server list
+  494  knife google server list
+  497  knife google server list
+  498  gem install knife-google
+  499  chef gem install knife-google
+  500  sudo chef gem install knife-google
+  503  chef gem install knife-google
+  505  chef gem install knife-google
+  512  knife google servers list
+  513  knife google region list
+  514  knife google region list -vvv
+  515  knife google --help
+  516  knife google server --help
+  517  knife google zone list
+  526  knife node run_list set chefnode1 recipe[app::install]
+  529  knife node run_list set chefnode1 recipe[app::install]
+  541  knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo -N chefnode1
+  542  knife bootstrap ec2-user@knife bootstrap ec2-user@ansibletest1 -i ../devops.pem --sudo -N  -i ../devops.pem --sudo -N chefnode1
+  543  knife bootstrap ec2-user@chefnode1 -i ../devops.pem --sudo -N chefnode1
+  544  knife node show chefnode1
+  581  knife cookbook upload example1
+  588  knife role
+  589  knife role list
+  590  knife role from file sample.rb 
+  591  knife role list
+  592  knife role show sample
+  594  knife node
+  595  knife node run_list set role['ample']
+  596  knife node run_list set chefnode1 role['sample']
+  597  knife role from file sample.rb 
+  609  knife role from file sample.rb 
+  625  knife environment from file DEV.rb 
+  635  knife environment from file DEV.rb 
+  636  knife environment 
+  637  knife environment list 
+  638  knife environment show DEV
+  639  knife environment edit DEV
+  641  knife environment edit DEV
+  642  knife node show chefnode1
+  643  knife node 
+  644  knife node edit chefnode1
+  645  knife node environment set chefnode1 DEV
+  646  knife node show chefnode1
+  647  knife node run_list remove recipe[example1]
+  648  knife node run_list remove chefnode1 recipe[example1]
+  649  knife node run_list remove chefnode1 role[sample]
+  650  knife node show chefnode1
+  653  knife node run_list set chefnode1 recipe[example]
+  654  knife node run_list set chefnode1 recipe[example1]
+  655  knife node run_list set chefnode1 recipe[app::install]
+  659  knife environment from file DEV.rb 
+  661  knife node run_list set chefnode1 recipe[example1]
+  665  knife cookbook upload example1
+  666  knife bootstrap ec2-user@35.196.188.168 -i ../devops.pem --sudo -N  stu-prdapp1
+  667  knife node environment set stu-prdapp1 PROD
+  674  knife environment from file PROD.rb 
+  675  knife node run_list set stu-prdapp1 recipe[example1]
+  681  knife cookbook upload example1
+  685  knife environment from file DEV.rb 
+  695  knife --help| grep bag
+  696  knife data bag create deployments 
+  697  knife data bag from file deployments sample.json 
+  699  knife data bag from file deployments sample.json 
+  700  knife search deployments 
+  701  knife search deployments "(id:URL)"
+  715  knife cookbook upload example1
+  717  knife cookbook upload example1
+  721  knife job
+  722  knife job list
+  723  knife job start uptime chefnode1
+  724  knife job start -q 0% uptime chefnode1
+  725  knife --help | grep market
+  727  knife supermarket download push-jobs
+  731  knife cookbook 
+  732  knife supermarket download chef-ingredient
+  733  knife supermarket download runit
+  735  knife cookbook upload chef-ingredient
+  738  knife cookbook upload runit
+  740  knife cookbook upload runit
+  741  knife supermarket download yum-epel
+  742  knife supermarket download packagecloud
+  744  knife cookbook upload packagecloud
+  746  knife cookbook upload yum-epel
+  747  knife cookbook upload push-jobs
+  748  knife cookbook upload runit
+  749  knife cookbook upload push-jobs
+  750  knife node run_list add chefnode1 recipe[push-jobs]
+  751  knife job start -q 0% uptime chefnode1
+  763  knife cookbook upload push-jobs
+  765  knife job start -q 0% chef-client chefnode1
+  766  knife job start -q 0% uptime chefnode1
+  767  knife node run_list set chefnode1 role[sample]
+  768  knife node edit chefnode1
+  769  knife node shwo chefnode1
+  770  knife node show chefnode1
+  771  knife job start -q 0% uptime  --search 'role:sample'
+  775  knife node show stu-prdapp1
+  776  knife node 
+  777  knife node run_list add chefnode1 role[sample]
+  778  knife node edit chefnode1
+  780  knife node show stu-prdapp1
+  781  knife node edit stu-prdapp1
+  782  knife node run_list add chefnode1 role::sample
+  783  knife node edit stu-prdapp1
+  784  knife node run_list add stu-prdapp1 role::sample
+  785  knife node edit stu-prdapp1
+  786  knife node edit chefnode1
+  787  knife job start -q 0% uptime  --search 'role:sample'
+  796  knife node edit chefnode1
+  800  knife cookbook upload example1
+  804  knife cookbook upload example1
+  806  knife cookbook upload example1
+  812  history | grep knife >>chef/commands 
